@@ -1,0 +1,102 @@
+body {
+	background-image: url("bandbg.jpg");
+	background-repeat: repeat-xy;
+    background-attachment: fixed; 
+}
+
+
+header {
+	margin-left:  10%;
+    margin-right: 10%;
+	background-color: #99d8ff;
+	position: fixed;
+	top: 0px;
+	height: 100px;
+	width: 80%;
+	z-index: 1;
+
+}
+
+header h1{
+	font-weight: 900;
+}
+
+div {
+	background-color: #ffffff;
+	opacity: 0.9;
+	top: 50px;
+	position: absolute;
+  	height: 100%;
+  	z-index: 0;
+
+}
+
+footer {
+	background-color: #ffffff;
+	position: fixed;
+  	bottom: 0;
+  	width: 80%;
+  	margin-left:  10%;
+    margin-right: 10%;
+}
+
+a {
+	text-transform: uppercase;
+}
+
+.row {
+	width: 80%;
+    margin-left:  10%;
+    margin-right: 10%;
+
+  }
+
+a:active {
+	background-color: red;
+}
+
+#navhead {
+	display: inline-block;
+	padding-left: 50px;
+}
+
+nav {
+	display: inline;
+	font-size: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 80%;
+}
+
+nav a {
+	padding-left: 30px;
+}
+
+@media only screen and (min-width: 400px) {
+	.col-sm-7 {
+		border-right: none;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.col-sm-7 {
+		border-right: 1px solid black;;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.col-sm-7 {
+		border-right: 1px solid black;
+	}
+}
+
+@media print {
+	body {
+		background-image: none;
+	}
+
+	nav {
+		display: none;
+	}
+}
+
