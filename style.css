@@ -1,9 +1,3 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box;
-}
-
 body {
 	background-image: url("bandbg.jpg");
 	background-repeat: repeat-xy;
@@ -134,16 +128,88 @@ div {
 
 
 @media only screen and (min-width: 400px) {
+	.main, .side {
+		display: block;
+	}
 
+	.main {
+		width: 100%;
+	    padding: 10px;
+	}
+
+	.side {
+		width: 100%;
+	    padding: 10px;
+	    margin-top: 5px;
+	}
+
+	#socialmedia {
+		display: block;
+	}
+
+	footer {
+		text-align: center;
+	}
 
 }
 
 @media only screen and (min-width: 800px) {
-	
+	*, *:before, *:after {
+	  -moz-box-sizing: border-box; 
+	  -webkit-box-sizing: border-box; 
+	  box-sizing: border-box;
+	}
+
+	.main {
+		width: 75%;
+	    float: left;
+	    padding: 30px;
+	}
+
+	.side {
+		width: 25%;
+	    float: left;
+	    padding: 30px;
+	    margin-top: 0px;
+	}
+
+	#socialmedia {
+		display: inline;
+	}
+
+	footer {
+		text-align: left;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
-	
+	*, *:before, *:after {
+	  -moz-box-sizing: border-box; 
+	  -webkit-box-sizing: border-box; 
+	  box-sizing: border-box;
+	}
+
+	.main {
+		width: 75%;
+	    float: left;
+	    padding: 30px;
+	}
+
+	.side {
+		width: 25%;
+	    float: left;
+	    padding: 30px;
+	    margin-top: 0px;
+	}
+
+	#socialmedia {
+		display: inline;
+	}
+
+	footer {
+		text-align: left;
+	}
+
 }
 
 @media print {
