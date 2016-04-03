@@ -4,48 +4,49 @@
 	<meta charset="UTF-8">
 	<title>AUDRANDA</title>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-
 	<link rel="stylesheet" type="text/css" href="static/style.css"/>
 	<meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
 </head>
-<body>
-	<header class="navbar navbar-default navbar-fixed-top">
 
-	<h1 id = "navhead">AUDRANDA</h1>
+<body>
+	<header> 
+
+	<h1 id = "navhead"><img class="img-circle" src="static/icon.jpg" align="middle" height="75px" width="75px">AUDRANDA</h1>
 
 		<nav>
-			<a href = "index.html">Home</a>
-			<a href = "Audra.html">Audra</a>
-			<a href = "Amanda.html">Amanda</a>
-			<a href = "TheirStory.html">Their Story</a>
+			<ul class="navclass">
+				<li><a href = "index.html">home</a></li>
+				<li><a href = "about.html">about</a></li>
+				<li><a href = "gallery.html">gallery</a></li>
+				<li><a href = "faq.html">faq</a></li>
+				<li><a href = "contact.html">contact</a></li>
+			</ul>
 		</nav>
 
 	</header>
 
-	<div class="row">
-		<div class="col-sm-7">
+
+		<div class="main">
 			{% block content %}
 			I should never see this content.  It should be replaced.
 			{%endblock%}
 	 	</div>
 
-	  	<div class="col-sm-5">
-			<a class="twitter-timeline" href="https://twitter.com/hashtag/audranda" data-widget-id="714640235066470401">#audranda Tweets</a>
+	  	<div class="side">
+			<a class="twitter-timeline .w3-hide-small" href="https://twitter.com/hashtag/audranda" data-widget-id="714640235066470401">#audranda Tweets</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</div>
 		</div>
+	
+
 	<footer>
 
-		<p>Copyright &copy; Audranda 2016</p>
+		Copyright &copy; Audranda 2016
+		<ul id = "socialmedia">
+			<li><a href="https://twitter.com/audranda2016"><img align="middle" src="static/twitter.jpg" alt="Twitter"></a></li>
+			<li><a href="https://www.facebook.com/Audranda-920604891385920/?fref=ts"><img align="middle" src="static/facebook.jpg" alt="Facebook"></a></li>
+			<li><a href="https://www.instagram.com/audranda/"><img align="middle" src="static/instagram.jpg" alt="Instagram"></a></li>
+		</ul>
 
 	</footer>
 	
