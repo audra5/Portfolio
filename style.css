@@ -7,31 +7,68 @@ body {
     margin-right: 10%;
 }
 
+p, li {
+	text-indent: 50px;
+	font-family: 'Lora', serif;
+	line-height: 25px;
+	color:  #33336F;
+}
+
 header {
-	background-color: white;
+	background-color: #d0d0e3;
 	position: fixed;
 	height: 100px;
 	top: 0px;
 	width: 80%;
 	padding: 10px;
+	box-shadow: 0px 10px 10px #777;
 
 }
 
-header h1{
-	font-weight: 900;
-}
-
-header img {
+.img-circle {
+	height: 75px;
+	width: 75px;
+	vertical-align: middle;
+	margin-right: 3px;
 	border-radius: 50%;
 }
 
+h1, h2{
+	font-family: 'Playfair Display', serif;
+	letter-spacing: 5px;
+	font-size: xx-large;
+	text-align: center;
+	padding-bottom: 7px;
+
+}
+
+h3 {
+	font-family: 'Lora', serif;
+	letter-spacing: 3px;
+	padding: 5px;
+	font-size: x-large;
+}
+
+h4 {
+	font-family: 'Lora', serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	font-size: large;
+}
+
 footer {
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 	position: fixed;
   	bottom: 0px;
   	width: 80%;
   	padding: 10px;
+  	color: #33336F;
+  	border-top: 1px solid #d5d5d8;
+  	color:  #33336F;
+  	font-family: 'Lora', serif;
+	line-height: 25px;
 }
+
 
 #navhead {
 	display: inline;
@@ -48,6 +85,7 @@ nav {
 
 nav a {
 	padding-left: 30px;
+	color: #CC033C;
 }
 
 .navclass {
@@ -64,6 +102,11 @@ nav ul {
 
 nav li {
 	display: inline;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+a.current {
+	color: black;
 }
 
 a {
@@ -79,34 +122,21 @@ a {
 }
 
 .gallery {
-	text-align: center;
+	text-align: justify;
+
 }
 
 /*.twitter_timeline {
 	position: fixed;
 }*/
 
-div {
-	background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.9);
-    bottom:0px;
-    top: 0px;
-    height: 100vh;
-}
 
 .both {
-	height: 100%;
-}
-.main {
-	width: 75%;
-    float: left;
-    padding: 30px;
-}
-
-.side {
-	width: 25%;
-    float: left;
-    padding: 30px;
+	background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom:100px;
+    top: 0px;
+    height: 100vh;
 }
 
 #socialmedia {
@@ -124,6 +154,7 @@ div {
 #socialmedia img{
 	width: 40px;
 	padding: 10px;
+	vertical-align: middle;
 }
 
 
@@ -200,6 +231,7 @@ div {
 	    float: left;
 	    padding: 30px;
 	    margin-top: 0px;
+	    
 	}
 
 	#socialmedia {
